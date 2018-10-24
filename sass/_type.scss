@@ -1,0 +1,95 @@
+//
+// _type.scss
+//
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin: 0 0 1em 0;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+a {
+    color: $yellow;
+    text-decoration: underline;
+}
+
+a.external::after {
+    content: '';
+    display: inline-block;
+    margin-top: -0.3rem;
+    width: 1.9rem;
+    height: 1.8rem;
+    background-image: url('../img/icons/export.svg');
+    background-size: 1.4rem 1.4rem;
+    background-position: top right;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    fill: white;
+}
+
+a.cta {
+    display: inline-block;
+    background-color: $yellow;
+    color: $font_dark;
+    text-align: center;
+    line-height: 4rem;
+    padding: 0 1em;
+    font-weight: normal;
+}
+
+sup {
+    font-size: 80%;
+}
+
+svg.icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 0.25em;
+    fill: $light_blue;
+}
+
+code, pre {
+    font-family: $font_mono;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    padding-left: 3em;
+    font-style: italic;
+    position: relative;
+
+    em {
+        font-style: normal;
+    }
+
+    &::before {
+        //font-family: Times New Roman, Times, FreeSerif, serif;
+        content: '“';
+        display: block;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 4rem;
+        font-size: 7.2rem;
+        color: mix($dark_blue, $yellow, 50%);
+    }
+}

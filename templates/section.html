@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% import "_macros.html" as macros %}
+
+{% block page_title %}Archive &mdash;{% endblock %}
+
+{% block body_class %}archive{% endblock %}
+
+{% block main %}
+
+    <h1>{{ section.title }}</h1>
+
+    <p class="archive-description">
+        The loved and hated blog. A place where I write stuff I most probably
+        regret writing about in six or so months. Updated whenever.
+    </p>
+
+    <div id="post-loop">
+
+        {% for post in section.pages %}
+
+            {% if post.extra.format and post.extra.format == 'audio' %}
+
+            <div class="post format-link">
+                <h2>
+                    {{ macros::svg(icon="soundcloud") }}
+                    <a class="external" href="{{ post.extra.link }}" target="_blank" rel="noreferrer nofollow noopener">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date(format="%d.%m.%Y") }}</p>
+            </div>
+
+            {% elif post.extra.format and post.extra.format == 'link' %}
+
+            <div class="post format-link">
+                <h2>
+                    {{ macros::svg(icon="link") }}
+                    <a class="external" href="{{ post.extra.link }}" target="_blank" rel="noreferrer nofollow noopener">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date(format="%d.%m.%Y") }}</p>
+            </div>
+
+            {% else %}
+
+            <div class="post format-article">
+                <h2>
+                    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ post.date | date(format="%d.%m.%Y") }}</p>
+            </div>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

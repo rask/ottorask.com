@@ -1,0 +1,10 @@
+{% if page.permalink %}
+<meta property="og:title" content="{% block page_title %}{% endblock %} ottorask.com">
+<meta property="og:image" content="/share.png">
+<meta property="og:url" content="{{ page.permalink }}">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@ojrask">
+{% endif %}

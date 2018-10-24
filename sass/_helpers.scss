@@ -1,0 +1,20 @@
+//
+// _helpers.scss
+//
+
+@mixin bp($bp)
+{
+    @if ($bp == phone) {
+        @media screen and (min-width: 480px) {
+            @content;
+        }
+    } @else if ($bp == tablet) {
+        @media screen and (min-width: 720px) {
+            @content;
+        }
+    } @else if ($bp == desktop) {
+        @media screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+}

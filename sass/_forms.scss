@@ -1,0 +1,71 @@
+//
+// _forms.scss
+//
+
+main#main form {
+    p {
+        margin-top: 1.75em;
+    }
+
+    br {
+        display: none;
+    }
+
+    label {
+        display: block;
+        line-height: 3rem;
+        font-weight: bold;
+    }
+
+    label[for] {
+        cursor: pointer;
+    }
+
+    label:not([for]) {
+        margin: 1em 0;
+    }
+
+    label.contains-input {
+        font-weight: 300;
+        padding: 0.25em 0;
+    }
+
+    em {
+        display: block;
+        padding: 0.333em 0;
+        font-style: normal;
+        font-size: 90%;
+        color: mix($dark_blue, white, 50%);
+    }
+
+    textarea,
+    select,
+    input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]) {
+        display: block;
+        width: 100%;
+        line-height: 1.333;
+        padding: 0.5em;
+        background-color: mix(black, $dark_blue, 25%);
+        border: 0.1rem solid mix(white, $dark_blue, 10%);
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 0.333em;
+    }
+
+    input[type="button"],
+    button {
+        background-color: $yellow;
+        padding: 0 1em;
+        border: 0;
+        cursor: pointer;
+        color: $font_dark;
+        text-align: center;
+        line-height: 4rem;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,130 @@
+//
+// _singular.scss
+//
+
+.single, .page, .error404 {
+    #main {
+        .meta {
+            margin: 2em 0;
+            color: mix(white, $dark_blue, 50%);
+        }
+
+        img, .caption, .caption img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        & > img, & > .caption {
+            margin: 2em 0;
+        }
+
+	.caption {
+		p {
+			font-size: 85%;
+			font-style: italic;
+			padding: 1ex 0;
+			text-align: right;
+		}
+	}
+
+        article {
+            color: mix($dark_blue, white, 12.5%);
+
+            & > * + * {
+                margin-top: 1.75em;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+            }
+
+            ul, ol {
+                margin-left: 1.5em;
+            }
+
+            li {
+                padding: 0.333em 0;
+            }
+
+            & > p:first-of-type:first-child {
+                font-size: 120%;
+            }
+
+            p, ul, ol, blockquote {
+                code {
+                    font-size: 95%;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding-left: 0.25em;
+                    padding-right: 0.25em;
+                    background-color: rgba(0, 0, 0, 0.125);
+                }
+
+                a code {
+                    display: inline;
+                    background: none;
+                    padding: 0;
+                }
+            }
+
+            pre {
+                overflow-x: auto;
+                font-size: 90%;
+                padding: 1em;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-left: 0.1rem solid rgba(0, 0, 0, 0.333);
+            }
+
+            a:hover {
+                background-color: $yellow_shade;
+            }
+        }
+
+        article {
+            position: relative;
+        }
+
+        article::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -5rem;
+            width: 100%;
+            left: 0;
+            right: 0;
+            height: 0.1rem;
+            background-color: $yellow_shade;
+            z-index: 4;
+        }
+
+        article::before {
+            display: block;
+            position: absolute;
+            content: '';
+            background-color: $bg_dark;
+            padding: 0.5rem;
+            bottom: -6.5rem;
+            left: 50%;
+            margin-left: -2.5rem;
+            z-index: 5;
+            width: 4rem;
+            height: 2rem;
+            background-size: 2rem 1.4rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('/img/logo.svg');
+        }
+
+        @include bp(desktop) {
+            article {
+                padding-bottom: 3rem;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}

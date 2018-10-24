@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% import "_macros.html" as macros %}
+
+{% block page_title %}{{ page.title }} &mdash;{% endblock %}
+
+{% block body_class %}
+{% if page.date %}
+single
+{% else %}
+page
+{% endif %}
+{% endblock %}
+
+{% block main %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.extra.hero_image %}
+    <img
+        width="1280" height="720"
+        src="{{ page.extra.hero_image }}"
+        class="size-16x9 post-image" alt="{{ page.extra.hero_image_alt }}">
+    {% endif %}
+
+    {% if page.date %}
+    <p class="meta">Posted on {{ macros::nicedate(daynum=page.day, date=page.date) }}</p>
+    {% endif %}
+
+    <article>
+        {{ page.content | safe }}
+    </article>
+
+{% endblock %}

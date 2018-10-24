@@ -1,0 +1,57 @@
+//
+// _scroll-bar.scss
+//
+
+// Put inside body to keep browsers' own scroll in the main document.
+body {
+    $sb_bg: mix(black, $bg_dark, 50%);
+
+    ::-webkit-scrollbar {
+        background-color: $sb_bg;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: mix(black, $bg_dark, 33%);
+        background-size: 0.9rem 0.9rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+
+        &:horizontal {
+            &:decrement {
+                background-image: url(../img/icons/arrow-left.svg);
+            }
+
+            &:increment {
+                background-image: url(../img/icons/arrow-right.svg);
+            }
+        }
+
+        &:vertical {
+            &:decrement {
+                background-image: url(../img/icons/arrow-up.svg);
+            }
+
+            &:increment {
+                background-image: url(../img/icons/arrow-down.svg);
+            }
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: $sb_bg;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: $sb_bg;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: mix(black, $bg_dark, 20%);
+        box-sizing: border-box;
+        border: 0.3rem solid $sb_bg;
+        border-radius: 0.5rem;
+    }
+}

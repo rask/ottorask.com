@@ -1,0 +1,70 @@
+//
+// _layout.scss
+//
+
+body {
+
+}
+
+header#header {
+    width: 100%;
+    max-width: 48em;
+}
+
+#header > .me-elsewhere {
+    display: none;
+}
+
+main#main {
+    width: 100%;
+    max-width: 48em;
+}
+
+#main + .me-elsewhere {
+    width: 100%;
+    margin: 8rem auto;
+    max-width: calc(48em - 6rem);
+    background-color: mix(black, $dark_blue, 15%);
+}
+
+footer#footer {
+    width: 100%;
+    clear: both;
+}
+
+@include bp(desktop) {
+    body {
+        display: block;
+    }
+
+    header#header {
+        float: left;
+        padding: 8rem 4rem 8rem 8rem;
+        max-width: 100%;
+        width: 32rem;
+    }
+
+    #header > .me-elsewhere {
+        display: block;
+        padding: 0;
+        margin-top: 8rem;
+    }
+
+    #main + .me-elsewhere {
+        display: none;
+    }
+
+    main#main {
+        float: left;
+        padding: 8rem 8rem 8rem 4rem;
+        max-width: 100%;
+        width: 68rem;
+    }
+
+    footer#footer {
+        margin-top: 8rem;
+        padding: 8rem;
+        text-align: left;
+        clear: both;
+    }
+}

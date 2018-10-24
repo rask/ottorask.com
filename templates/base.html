@@ -1,0 +1,63 @@
+{% import '_macros.html' as macros %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0,width=device-width">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cousine:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link href="/global.css" type="text/css" rel="stylesheet">
+
+        <title>{% block page_title %}{% endblock %} ottorask.com</title>
+
+        {% include '_favicons.html' %}
+        {% include '_share-meta.html' %}
+
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+
+        <hr id="top">
+
+        <header id="header">
+
+            <p class="logo">
+                <a href="/">
+                    <img src="/img/logo.svg" width="120" height="80" alt="ottorask.com logo">
+                    <span>ottorask.com</span>
+                </a>
+            </p>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Archive</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+
+            {% include '_social-links.html' %}
+
+        </header> <!--- /#header -->
+
+        <main id="main">
+
+            {% block main %}{% endblock %}
+
+        </main>
+
+        {% include '_social-links.html' %}
+
+        <footer id="footer">
+            <p>Copyright &copy; Otto Rask &mdash; <a href="#top">Back to top</a></p>
+        </footer> <!-- /#footer -->
+
+        {# include '_analytics.html' #}
+
+    </body>
+
+</html>

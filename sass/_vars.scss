@@ -1,0 +1,23 @@
+//
+// _vars.scss
+//
+
+// COLOR
+
+$dark_blue: #192c34;
+$light_blue: mix(white, $dark_blue, 20%);
+$yellow: #f4c842;
+$yellow_shade: transparentize($yellow, 0.9);
+
+$bg_dark: $dark_blue;
+$font_light: #eee;
+$font_dark: #222;
+
+// FONTS
+
+$sans_serif: Roboto, Arial, Helvetica, FreeSans, sans-serif;
+$monospace: Cousine, monospace;
+
+$font_body: $sans_serif;
+$font_heading: $sans_serif;
+$font_mono: $monospace;

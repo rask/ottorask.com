@@ -1,0 +1,13 @@
+# development configuration
+
+base_url = "localhost:1111"
+highlight_code = false
+highlight_theme = "monokai"
+compile_sass = true
+
+[extra.profile_links]
+linkedin = "https://linkedin.com/in/ojrask"
+github = "https://github.com/rask"
+twitter = "https://twitter.com/ojrask"
+soundcloud = "https://soundcloud.com/ojrask"
+patreon = "https://patreon.com/ojrask"

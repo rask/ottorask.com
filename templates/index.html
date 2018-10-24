@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% import "_macros.html" as macros %}
+
+{% block page_title %}Home &mdash;{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block main %}
+
+    {% set blog_section = get_section(path="blog/_index.md") %}
+
+    <h1>Somewhat recently</h1>
+
+    <div id="post-loop">
+
+        {% for post in blog_section.pages %}
+
+            {% if post.extra.format and post.extra.format == 'audio' %}
+
+            <div class="post format-link">
+                <h2>
+                    {{ macros::svg(icon="soundcloud") }}
+                    <p class="meta">{{ post.date | date(format="%d.%m.%Y") }}</p>
+                    <a class="external" href="{{ post.extra.link }}" target="_blank" rel="noreferrer nofollow noopener">{{ post.title }}</a>
+                </h2>
+            </div>
+
+            {% elif post.extra.format and post.extra.format == 'link' %}
+
+            <div class="post format-link">
+                <h2>
+                    {{ macros::svg(icon="link") }}
+                    <p class="meta">{{ post.date | date(format="%d.%m.%Y") }}</p>
+                    <a class="external" href="{{ post.extra.link }}" target="_blank" rel="noreferrer nofollow noopener">{{ post.title }}</a>
+                </h2>
+            </div>
+
+            {% else %}
+
+            <div class="post format-article">
+                <h2>
+                    <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
+                </h2>
+                <p class="meta">{{ macros::nicedate(daynum=post.day, date=post.date) }}</p>
+            </div>
+
+            {% endif %}
+
+        {% if loop.index == 6 %}{% break %}{% endif %}
+        {% endfor %}
+
+        <a class="cta" href="/blog">More in the archive</a>
+
+    </div>
+
+{% endblock %}
