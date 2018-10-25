@@ -1,6 +1,6 @@
 +++
 title = "Goodbye WordPress, hello Gutenberg!"
-date = 2018-10-02T23:08:00Z
+date = 2018-10-25T23:08:00Z
 slug = "goodbye-wordpress-hello-gutenberg"
 +++
 
