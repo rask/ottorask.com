@@ -1,5 +1,4 @@
 {% macro nicedate(daynum, date) %}
-
     {% if daynum == 1 %}
         {% set suffix = "st" %}
     {% elif daynum == 21 %}
@@ -26,11 +25,3 @@
         <use xlink:href="/img/icons/icomoon-ref.nocmpr.svg#icon-{{ icon }}"></use>
     </svg>
 {% endmacro svg %}
-
-{% macro link(label, url, external=true) %}
-{% if external %}
-<a href="{{ url }}" target="_blank" class="external" rel="noopener noreferrer nofollow">{{ label }}</a>
-{% else %}
-<a href="{{ url }}">{{ label }}</a>
-{% endif %}
-{% endmacro link %}

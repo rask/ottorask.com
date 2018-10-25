@@ -1,9 +1,9 @@
 # development configuration
 
-base_url = "http://localhost:1111"
+base_url = "https://www.ottorask.com"
 highlight_code = false
 highlight_theme = "monokai"
 compile_sass = true
 
 [extra.flags]
-analytics = false
+analytics = true
