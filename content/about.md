@@ -6,17 +6,18 @@ My name is Otto Rask. I’m from Finland and I am a &hellip;
 
 ## Software engineer
 
-I work at a Finnish digital service solutions provider called
-{{ link(label="Sofokus", url="https://www.sofokus.com", external=true) }}.
+I am a professional web-focused software engineer, and my career started as a
+hobby in the early 2000s when I found out about PC game modding, and HTML and
+CSS.
 
 When I’m not working, I’m working (heh) on my own projects or helping out with
 other folks' open source projects. My open source stuff is available over at
 {{ link(label="GitHub", url="https://github.com/rask", external=true) }}.
 
-I mainly work with PHP, sometimes Python, sometimes Rust. Continuous integration
-and continuous deployment, devops methodologies, and automation are things that
-are close to my heart as well. I also know my way around servers and cloud
-providers.
+I mainly work with PHP, sometimes Rust, sometimes something else. Continuous
+integration and continuous deployment, devops methodologies, and automation
+are things that are close to my heart as well. I also know my way around
+servers and cloud providers.
 
 ## Hobbyist music producer
 
