@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/ojrask
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.ottorask.com
+  * I am ojrask (https://keybase.io/ojrask) on keybase.
+  * I have a public key with fingerprint D1F1 B1EC 2861 B7CE 37BE  4DAE CB4C E54A F8F3 5199
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012b013938675a7aa9df9df18d4fa3a78d5482436f7c36e844f770a40a12f0d98f0a",
+      "fingerprint": "d1f1b1ec2861b7ce37be4daecb4ce54af8f35199",
+      "host": "keybase.io",
+      "key_id": "cb4ce54af8f35199",
+      "kid": "01012b013938675a7aa9df9df18d4fa3a78d5482436f7c36e844f770a40a12f0d98f0a",
+      "uid": "b68b160d87f6d9964fa17a4c10823a19",
+      "username": "ojrask"
+    },
+    "merkle_root": {
+      "ctime": 1540545334,
+      "hash_meta": "6283155a64184c0e24fcea54b530686b6b031092b292e810e305e40cee57ae2a",
+      "seqno": 3853373
+    },
+    "revoke": {
+      "sig_ids": [
+        "deed55fc29fc5376904c9437731f6503dc326ea12361ba605542e3b348efa8be0f"
+      ]
+    },
+    "service": {
+      "hostname": "www.ottorask.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1540545346,
+  "expire_in": 157680000,
+  "prev": "74103f6237848d2297695d2da8ddde1fa11c7b672667f5c7f9b11b206b17ebe1",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMK+AnicrVNtaJZVGN4ss9bMMRul1IgnxRZjnPOcz2cgoY2+y/YjKLd4Ox/32Z69
+2/vM533efbgmWUFgUi60evtiP0owVxBog0gYIpZKrUKMVKhF/WiCIkrWD7HzDCOI
+fnY4cDjnXPd1X/d1n3No6TU1dbXHHvn1oT8udFZrjx0cqdR0fXdq/VigEzsatI8F
+RVhYoN9COSsUYxu0BwgjHGqESUQkF0wJpSLr/MTSUqeIEtIyKkNKuBOGcJCUOiGQ
+okjh0CEbSYdU0Bq4uNQD6WAalzJPa7HDGoMJJcdaGCBCA7UKjKYGGFVOOsJwFPnA
+3qScR3hxWpWhLU78md8UFuT9B/5/1l1ZoNNcasyRlcJxG0XcU2ChqMFIhkThPG+l
+DGlJDYBHJ32pKheD8dZgANJiPxTSJMlya00W5wDMKGKUEUJ9earcWxiATPk4HkqC
+GVOcYkkNgpA6A4pRzQjikmuuEcEoCnUYhSAxAoIYUGQAmFAQ5nLLsKmUBO1EenZB
+vIIUhpIi5MnLcY83rRy0dwUWwDLmTBg5w4jgEaImokQIgh1niFhDQg7eCOLbozhi
+jIZANKESnJIakAueHs+TpUOxWSDPu3S1+uHh4bYky5LcgzaTDHhVg2mSJSbp97e9
+WTZYbs+9yUYHF+CgC1eJCjouWf9OfMQQpOU4KXmvPPJftlHeGsDIYJxCIc4RTHCJ
+/MjzwJCnFBQj4nhIhKTShmHkK2Q2tEpaawH73mEjNBch58IxI1ykMdYh4hoL0ID/
+8TEUXqfq8ZzevZLKKikE4wdnuq6tqa2ruW7xovwD1dTd0PD3t9pzesml8ammzQ/8
+uW725ET96hfN3u8f/2j9kebH+rbWruqOf9919/Xvbny2NPnGy9Mt5Jk1M1s6f142
+t3bF8Rvrzy2tTnbN4uqnp1+aubRtZdPirHFN9wjr39ZwV8utE2f5ldF3mu+r7oub
+PvtwemfvcMfRb7s6D3ywrvhxM6muPHTHnTdtOTy177J4cNJFKw7MX/z6p1Mkvm13
+8fVX+vRY3P3C7Y1ntt+y4Z7nL3SfXN66MTvb8EtDx/1rv3nr8yfirzadWPTcb+/v
+aFl1dNd7l9GTG3Ybu/2Tc69Om/2NP7xZOXP+yom3d97bUN3bsXXk4v6pzU8t2fPw
+F+DmXlt9+HzfxNyPx2dv3rHs0frgy+XzR+Y7/wK9dYGg
+=T5SB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ojrask
+
+==================================================================
