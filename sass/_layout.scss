@@ -2,10 +2,6 @@
 // _layout.scss
 //
 
-body {
-
-}
-
 header#header {
     width: 100%;
     max-width: 48em;
@@ -66,5 +62,11 @@ footer#footer {
         padding: 8rem;
         text-align: left;
         clear: both;
+    }
+}
+
+@include bp(large_desktop) {
+    main#main {
+        width: 78rem;
     }
 }

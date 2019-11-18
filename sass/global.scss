@@ -25,16 +25,21 @@ html {
 
 body {
     font-size: 1.6em;
-    line-height: 1.7;
+    line-height: 1.6;
     color: $font_light;
     background: $bg_dark;
     font-weight: 300;
     font-family: $font_body;
+    -webkit-font-smoothing: antialiased;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 1.8rem;
+    }
 }
 
 #top {

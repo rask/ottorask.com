@@ -16,5 +16,9 @@
         @media screen and (min-width: 1024px) {
             @content;
         }
+    } @else if ($bp == large_desktop) {
+        @media screen and (min-width: 1921px) {
+            @content;
+        }
     }
 }
