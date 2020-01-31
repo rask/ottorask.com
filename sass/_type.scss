@@ -3,7 +3,7 @@
 //
 
 body {
-    -webkit-text-stroke: 0.1px;
+    //-webkit-text-stroke: 0.1px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -13,12 +13,21 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 3.6rem;
     margin: 0 0 1em 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 300;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-weight: 700;
 }
 
 a {
@@ -96,4 +105,8 @@ blockquote {
         font-size: 7.2rem;
         color: mix($dark_blue, $yellow, 50%);
     }
+}
+
+.meta {
+    font-feature-settings: 'tnum' 1;
 }

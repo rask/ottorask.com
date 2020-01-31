@@ -25,11 +25,12 @@ html {
 
 body {
     font-size: 1.6em;
-    line-height: 1.6;
+    line-height: 1.5;
     color: $font_light;
     background: $bg_dark;
-    font-weight: 300;
+    font-weight: 375;
     font-family: $font_body;
+    font-variation-settings: 'wght' 375;
     -webkit-font-smoothing: antialiased;
 
     display: flex;

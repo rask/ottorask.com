@@ -81,8 +81,10 @@
                 padding: 0.333em 0;
             }
 
-            & > p:first-of-type:first-child {
+            & > p:first-of-type:first-child, & > .notice:first-of-type:first-child + p {
                 font-size: 120%;
+                font-weight: 300;
+                font-variation-settings: 'wght' 300;
             }
 
             p, ul, ol, blockquote {
