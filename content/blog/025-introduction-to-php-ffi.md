@@ -119,7 +119,9 @@ Now that we have PHP with FFI available, we can start coding.
 
 ## FFI Hello World
 
->   Example code provided in [`101-hello-world`](https://github.com/rask/php-ffi-examples/tree/master/101-hello-world) directory of the examples repository.
+{% notice(type="info") %}
+Example code provided in [`101-hello-world`](https://github.com/rask/php-ffi-examples/tree/master/101-hello-world) directory of the examples repository.
+{% end %}
 
 What would a tutorial or series be without a _Hello World_ example? Behold:
 
@@ -176,7 +178,9 @@ So far so good. We now know how to load a C-ABI library and call its functions f
 
 ## Alternate method for loading
 
->   Example code provided in [`102-hello-world-with-load`](https://github.com/rask/php-ffi-examples/tree/master/102-hello-world-with-load) directory of the examples repository.
+{% notice(type="info") %}
+Example code provided in [`102-hello-world-with-load`](https://github.com/rask/php-ffi-examples/tree/master/102-hello-world-with-load) directory of the examples repository.
+{% end %}
 
 You can use the `cdef` method for loading a library, but you may also use the `load` method, which loads and parses a single C header file and infers the library to load from it.
 
@@ -315,7 +319,9 @@ $ffi = \FFI::cdef(
 
 ### Handling errors
 
->   Example code provided in [`103-hello-world-with-trycatch`](https://github.com/rask/php-ffi-examples/tree/master/103-hello-world-with-trycatch) directory of the examples repository.
+{% notice(type="info") %}
+Example code provided in [`103-hello-world-with-trycatch`](https://github.com/rask/php-ffi-examples/tree/master/103-hello-world-with-trycatch) directory of the examples repository.
+{% end %}
 
 All FFI errors are either instances of `\FFI\Exception`, or descendants of it. So the simplest approach to making your FFI loading a little less fragile is to use a generic try-catch as follows:
 
