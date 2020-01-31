@@ -1,21 +1,23 @@
 # rask/ottorask.com
 
-My personal website. Contains a blog and some content pages. Built with
-Gutenberg.
+My personal website. Contains a blog and some content pages. Built with Zola.
 
 ## Building
 
-Requires [Gutenberg](https://getgutenberg.io). Clone this repository and inside
-it run
+Requires [Zola](https://getzola.org) (formerly _Gutenberg_). Clone this repository and inside it run
 
-    $ gutenberg build
+    $ zola build
 
 To build a production version use
 
-    $ gutenberg --config ./config.production.toml build
+    $ zola --config ./config.production.toml build
 
-The static site will be built into `public/` from which it can be copy-pasted
-into a server document root.
+The static site will be built into `public/` from which it can be copy-pasted into a server document
+root.
+
+For development you can serve a hot-reloaded version locally using
+
+    $ zola serve
 
 ## Custom tooling
 
@@ -35,8 +37,7 @@ To insert a captioned image, use
 
 #### Special hyperlinks
 
-To create special hyperlinks which can denote whether the link is an external
-link or not, use
+To create special hyperlinks which can denote whether the link is an external link or not, use
 
     {{ link(
         label="Link text",
@@ -44,12 +45,20 @@ link or not, use
         external=true
     ) }}
 
+#### Notice boxes
+
+For a simple box with a neat `i` icon in the corner, use
+
+    {% notice(type="info") %}
+    My **awesome** notice content here!
+    {% end %}
+
 ### Macros
 
 #### SVG icons
 
-To use an SVG icon inside a template file, pick an SVG icon from the SVG symbol
-source (`static/img/icomoon-ref.nocmpr.svg`) and insert it using
+To use an SVG icon inside a template file, pick an SVG icon from the SVG symbol source
+(`static/img/icomoon-ref.nocmpr.svg`) and insert it using
 
     {% macro::svg(icon="...") %}
 
@@ -63,10 +72,9 @@ Use the following macro:
 
     {% macro::nicedate(daynum="...", date=...) %}
 
-`daynum` should be a number of day of month (`1` to `31`). `date` should be a
-full page date object.
+`daynum` should be a number of day of month (`1` to `31`). `date` should be a full page date object.
 
-## License
+## License and copyright
 
--   Site content and design: All rights reserved, copyright Otto Rask
+-   Site content, implementation, and design: All rights reserved, copyright Otto Rask
 -   Tooling and other assets: Copyrighted and licensed to their providers.
