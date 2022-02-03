@@ -15,12 +15,10 @@ $font_dark: #222;
 
 // FONTS
 
-@import url('https://rsms.me/inter/inter.css');
-
-$sans_serif: Inter, Roboto, Arial, Helvetica, FreeSans, sans-serif;
+$sans_serif: Inter, Arial, Helvetica, FreeSans, sans-serif;
 
 @supports (font-variation-settings: normal) {
-    $sans_serif: Inter var, Roboto, Arial, Helvetica, FreeSans, sans-serif;
+    $sans_serif: Inter var, Arial, Helvetica, FreeSans, sans-serif;
 }
 
 $monospace: Cousine, monospace;
