@@ -4,6 +4,8 @@ base_url = "http://localhost:1111"
 highlight_code = false
 highlight_theme = "monokai"
 compile_sass = true
+generate_feed = true
+feed_filename = "rss.xml"
 
 [extra]
 analytics = false
