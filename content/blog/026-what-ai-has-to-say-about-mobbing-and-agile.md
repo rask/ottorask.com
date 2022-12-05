@@ -1,6 +1,6 @@
 +++
 title = "What AI has to say about mobbing and agile software development"
-date = 2022-12-06T00:05:00Z
+date = 2022-12-06T01:35:00Z
 slug = "what-ai-has-to-say-about-mobbing-and-agile"
 +++
 
